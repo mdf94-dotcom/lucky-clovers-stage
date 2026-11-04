@@ -39,7 +39,7 @@ const me = {
   }
 };
 const users = [me]; users.get = (id) => users.find(u => u.id === id); users.filter = Array.prototype.filter.bind(users);
-const HEAD = (file) => file ? `heads/${file}` : "";
+const HEAD = (file) => file ? file : "";
 const actors = [
   { name: "Oleander \"Ollie\"", type: "character", file: "ollie.png" },
   { name: "Quickare", type: "character", file: "quickare.png" },
