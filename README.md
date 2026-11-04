@@ -11,7 +11,7 @@ An Incredibox-style band for the world of **Rhine**: Ollie, Quickare, Captain Tr
 
 This is the single-player web version. The shared, everyone-hears-it version lives in the Rhine Foundry module.
 
-**Adding Ollie's and Triton's pictures:** upload a square image as `heads/ollie.png` or `heads/triton.png`, then add the file name to the list on the `window.HEADS` line in `index.html` (for example `{"ollie.png": true, ...}`).
+**Adding Ollie's and Triton's pictures:** upload a square image as `ollie.png` or `triton.png` next to `index.html`, then add the file name to the list on the `window.HEADS` line in `index.html` (for example `{"ollie.png": true, ...}`).
 
 ## Files
 
@@ -20,6 +20,6 @@ This is the single-player web version. The shared, everyone-hears-it version liv
 - `shim.js` – stands in for the Foundry pieces the stage expects
 - `boot.js` – starts it
 - `samples/` – instrument recordings, one file per instrument, loaded only when used
-- `heads/` – character token art
+- the `.png` files – character token art
 
 See [CREDITS.md](CREDITS.md) for the recordings and art.
