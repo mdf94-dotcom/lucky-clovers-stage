@@ -9,7 +9,7 @@ An Incredibox-style band for the world of **Rhine**: Ollie, Quickare, Captain Tr
 - Combo bonuses, spotlight solos, setlists, saved mixes and recording a take (it downloads as a .webm)
 - Your mix is remembered in your browser
 
-This is the single-player web version. The shared, everyone-hears-it version lives in the Rhine Foundry module.
+**Play together:** click 👥 Play together, start a room and send the link. Everyone on the link shares one stage and hears the same song in time; anyone can change anything. Edits pass through a free public relay (broker.emqx.io), so keep names non-private.
 
 **Adding Ollie's and Triton's pictures:** upload a square image as `ollie.png` or `triton.png` next to `index.html`, then add the file name to the list on the `window.HEADS` line in `index.html` (for example `{"ollie.png": true, ...}`).
 
@@ -18,6 +18,8 @@ This is the single-player web version. The shared, everyone-hears-it version liv
 - `index.html` – the page
 - `band.js` – the band engine, the cast and the stage window
 - `shim.js` – stands in for the Foundry pieces the stage expects
+- `collab.js` – 👥 Play together (rooms, sharing edits, keeping everyone on the beat)
+- `mqtt.min.js` – the MQTT.js library (MIT) that talks to the relay
 - `boot.js` – starts it
 - `samples/` – instrument recordings, one file per instrument, loaded only when used
 - the `.png` files – character token art

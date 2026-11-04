@@ -5,6 +5,7 @@
 Hooks.callAll("init");
 Hooks.callAll("ready");
 BandWin.open();
+setTimeout(collabBoot, 300);
 // browsers only allow sound after a click, so the first click anywhere starts the band
 const gate = document.getElementById("gate");
 gate.onclick = () => { gate.remove(); try { actx().resume(); } catch {} Band.userStopped = false; bandSync(); BandWin.win?.refresh(); };

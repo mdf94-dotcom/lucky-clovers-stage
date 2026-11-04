@@ -15,3 +15,7 @@ Token art for the Rhine characters (Quickare, Big Green, Binko, Cat, Saguaro), u
 ## Code
 
 The band engine and stage were written for the Rhine campaign's Foundry VTT module.
+
+## Play together
+
+- **MQTT.js** (`mqtt.min.js`), MIT License. Rooms relay through the free public EMQX broker (broker.emqx.io).
